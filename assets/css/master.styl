@@ -1,0 +1,26 @@
+@import '_settings'
+@import '_jeet'
+
+normalize()
+base()
+
+body
+  padding: 50px
+
+#contain
+  center: 960px
+
+  .sidebar
+    col(1/4)
+
+  .main
+    col(3/4)
+
+  .sidebar, .main
+    padding: 10px
+    border: 1px solid
+
+    @media only screen and (max-width: 450px)
+      float: none
+      width: 100%
+      margin-bottom: .5em
